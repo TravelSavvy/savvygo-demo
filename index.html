@@ -6,9 +6,14 @@
   </head>
 
   <body>
-    <img class="header" alt="SavvyGo Video Player" src="./demo/SavvyGoLogo-01.png" width="400"/>
     <div data-playlist-id="1" class="sv-player"></div>
 
     <script data-sv-publisher="1" type="text/javascript" src="http://player.495savvygo.com/sv-player.min.js"></script>
+
+    <script>
+      document.addEventListener('sv-ready', function (event) {
+        window.svPlayer = event.detail;
+      });
+    </script>
   </body>
 </html>
