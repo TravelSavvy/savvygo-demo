@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="demo/demo-style.css" />
+  </head>
+
+  <body>
+    <img class="header" alt="SavvyGo Video Player" src="./demo/SavvyGoLogo-01.png" width="400"/>
+    <div data-playlist-id="1" class="sv-player"></div>
+
+    <script data-sv-publisher="1" data-env="staging" type="text/javascript" src="http://sv-player-staging.s3.amazonaws.com/sv-player.min.js"></script>
+
+    <script>
+      document.addEventListener('sv-ready', function() {
+        console.log(event.detail);
+      });
+    </script>
+  </body>
+</html>
