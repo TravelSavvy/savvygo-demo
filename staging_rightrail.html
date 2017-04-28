@@ -6,29 +6,34 @@
     <style>
       body {
       width:100%;
+      float: left;
       }
-      main {
-      width: 900px;
+      .full-page {
+      width: 1200px;
       float: left;
       }
       .main-column {
-      width: 600px;
+      width: 65%;
       float: left;
       }
       .right-column {
-      width: 300px;
+      margin-left: 1%;
+      width: 34%;
       float: left;
       }
       .lorem-ipsum {
         font-size: 12px;
+      }
+      .player-holder {
+        width: 300px;
       }
     </style>
     
   </head>
 
   <body>
-    <main>
-
+    <div class="full-page">
+      
       <div class="main-column">
         <h1>SavvyGo Player Staging</h1>
 	<p class="lorem-ipsum">
@@ -42,10 +47,12 @@
 	</p>
       </div>
       <div class="right-column">
-	<div data-playlist-id="1" class="sv-player"></div>
+	<div class="player-holder">
+	  <div data-playlist-id="1" class="sv-player"></div>
+	</div>
       </div>
       
-    </main>
+    </div>
 
     <script data-sv-publisher="1" data-env="staging" type="text/javascript" src="http://sv-player-staging.s3.amazonaws.com/sv-player.min.js"></script>
 
