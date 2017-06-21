@@ -14,6 +14,13 @@
 
 <script data-sv-publisher="1" data-env="staging" type="text/javascript" src="http://sv-player-staging.s3.amazonaws.com/sv-player.min.js"></script>
 
+
+<video id=example-video width=600 height=300 class="video-js vjs-default-skin" controls>
+  <source
+      src="http://mediaservicesmc.streaming.mediaservices.windows.net/56b5cd3a-f4fc-44d5-8ecb-938f654910f1/MatchedCars%20-%20Toyota%20RAV4_clip3.ism/manifest(format=m3u8-aapl).m3u8"
+      type="application/x-mpegURL">
+</video>
+
 <script>
   document.addEventListener('sv-ready', function() {
     window.svPlayer = event.detail;
